@@ -5,7 +5,7 @@ Created on Sat Aug 10 09:04:54 2019
 @author: randerson
 """
 
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 N_SIMS = 1
 
@@ -21,10 +21,11 @@ CLUSTER_NAME = ''
 #MACHINE = 'local'
 MACHINE = 'remote'
 if MACHINE == 'remote':
-    ROOT_REMOTE = Path('/home/randerson/simulation')
-    IMEX_EXE = Path('/mnt/simuladores/CMG/imex/2017.10/linux_x64/exe/mx201710.exe')
+    ROOT_REMOTE = PurePosixPath('/home/randerson/simulation')
+    IMEX_EXE = PurePosixPath('/mnt/simuladores/CMG/imex/2017.10/linux_x64/exe/mx201710.exe')
     USER = 'randerson'
     CLUSTER_NAME = 'hpc02'
     QUEUE_KIND = 'longas'
+    PUTTY_EXE = Path('C:/\"Program Files (x86)"/PuTTY/plink.exe')
 
 REPORT_EXE = Path('C:/\"Program Files (x86)"/CMG/BR/2017.10/Win_x64/EXE/report.exe')

@@ -50,7 +50,31 @@ class REPORT:
 *TIMES-FROM 1
 **LIST-PARAMETERS
 
-*TABLE-FOR *WELLS 'PRK085'
+*TABLE-FOR *WELLS 'PRK014'
+  *COLUMN-FOR *PARAMETERS 'Oil Rate SC - Monthly' 'Cumulative Oil SC'
+*TABLE-END
+
+*TABLE-FOR *WELLS 'PRK028'
+  *COLUMN-FOR *PARAMETERS 'Oil Rate SC - Monthly' 'Cumulative Oil SC'
+*TABLE-END
+
+*TABLE-FOR *WELLS 'PRK045'
+  *COLUMN-FOR *PARAMETERS 'Oil Rate SC - Monthly' 'Cumulative Oil SC'
+*TABLE-END
+
+*TABLE-FOR *WELLS 'PRK052'
+  *COLUMN-FOR *PARAMETERS 'Oil Rate SC - Monthly' 'Cumulative Oil SC'
+*TABLE-END
+
+*TABLE-FOR *WELLS 'PRK060'
+  *COLUMN-FOR *PARAMETERS 'Oil Rate SC - Monthly' 'Cumulative Oil SC'
+*TABLE-END
+
+*TABLE-FOR *WELLS 'PRK061'
+  *COLUMN-FOR *PARAMETERS 'Oil Rate SC - Monthly' 'Cumulative Oil SC'
+*TABLE-END
+
+*TABLE-FOR *WELLS 'PRK083'
   *COLUMN-FOR *PARAMETERS 'Oil Rate SC - Monthly' 'Cumulative Oil SC'
 *TABLE-END
 
@@ -58,7 +82,7 @@ class REPORT:
   *COLUMN-FOR *PARAMETERS 'Oil Rate SC - Monthly' 'Cumulative Oil SC'
 *TABLE-END
 
-*TABLE-FOR *WELLS 'PRK045'
+*TABLE-FOR *WELLS 'PRK085'
   *COLUMN-FOR *PARAMETERS 'Oil Rate SC - Monthly' 'Cumulative Oil SC'
 *TABLE-END
 
