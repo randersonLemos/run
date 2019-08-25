@@ -86,6 +86,10 @@ class REPORT:
   *COLUMN-FOR *PARAMETERS 'Oil Rate SC - Monthly' 'Cumulative Oil SC'
 *TABLE-END
 
+*TABLE-FOR *WELLS 'PWILDC'
+  *COLUMN-FOR *PARAMETERS 'Oil Rate SC - Monthly' 'Cumulative Oil SC'
+*TABLE-END
+
 *TABLE-FOR
   *COLUMN-FOR *PARAMETERS 'Oil Recovery Factor SCTR' *SECTORS 'Entire  Field'
 *TABLE-END'''.format(self.irf_file, self.output_folder / 'main.rep')
