@@ -8,7 +8,6 @@ Created on Sat Aug 10 09:04:54 2019
 from pathlib import Path, PurePosixPath
 
 NR_PROCESSORS = 12
-N_SIMS = 1
 
 LOCAL_ROOT     = Path('U:/simulation')
 LOCAL_IMEX_EXE = Path('C:/\"Program Files (x86)"/CMG/IMEX/2017.10/Win_x64/EXE/mx201710.exe')
