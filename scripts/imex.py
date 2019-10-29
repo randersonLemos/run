@@ -24,7 +24,7 @@ class Imex_Local:
     def run(self):
         self.folder_to_output.mkdir(parents=True, exist_ok=True)
 
-        command = str(self.exe) +\
+        command = str(self.exe_imex) +\
                   ' -f '+str(self.path_to_dat) +\
                   ' -wd '+str(self.folder_to_output) +\
                   ' -parasol 15' +\
