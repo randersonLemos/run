@@ -27,7 +27,7 @@ class Imex_Local:
         command = str(self.exe_imex) +\
                   ' -f '+str(self.path_to_dat) +\
                   ' -wd '+str(self.folder_to_output) +\
-                  ' -parasol 15' +\
+                  ' -parasol 12' +\
                   ' -jacpar' +\
                   ' -log' +\
                   ' -wait'
@@ -41,8 +41,9 @@ class Imex_Local:
         subprocess.Popen(command, shell=True)
 
     def log(self):
-        command  = 'sleep 1 & '
-        command += 'start powershell Get-Content {} -tail 10 -wait'\
+        import time
+        time.sleep(2)
+        command = 'start powershell Get-Content {} -tail 10 -wait'\
             .format(self.folder_to_output / '*.log')
         if self.verbose: print('command log:\n\t{}'.format(command))
         subprocess.Popen(command, shell=True)
