@@ -96,6 +96,7 @@ class Imex_Remote:
         command = str(self.exe_putty) +\
                 ' -load hpc02 qsub {}'.format(path_to_pbs)
         if self.verbose: print('command run:\n\t{}'.format(command))
+        import time; time.sleep(1)
         self.process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
         self.cluster_job_pid = re.findall(r'\d+',str(self.process.communicate()[0]))[0]
         if self.see_log: self.log()
